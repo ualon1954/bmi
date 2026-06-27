@@ -15,6 +15,7 @@ body{
 }
 
 .container{
+    margin-top: 20px;
     width:100%;
     max-width:550px;
     background:#fff;
@@ -28,7 +29,10 @@ h1{
     margin-bottom:25px;
     color:blue;
 }
-
+#mybmi{
+    color: #3b82f6;
+    font-weight: 550;
+}
 .input-group{
     margin-bottom:20px;
 }
@@ -38,6 +42,7 @@ label{
     margin-bottom:8px;
     font-weight:600;
     text-align: center;
+    color: black;
 }
 
 .range-value{
@@ -131,10 +136,13 @@ input[type=range]{
 
 @media(max-width:600px){
     .container {
-        /* width: 95%; */
+        width: 95%;
         background: #111827;
     }
     .bmi-value{
         font-size:45px;
     }
+    label{
+        color: white;
+    } 
 }

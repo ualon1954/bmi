@@ -43,14 +43,14 @@ function calculateBMI(){
     categoryEl.style.color = color;
     bmiEl.style.color = color;
 
-    ageValue.textContent = age.value;
-    heightValue.textContent = height.value + ' cm';
-    weightValue.textContent = weight.value + ' kg';
+    // ageValue.textContent = age.value;
+    heightValue.textContent = height.value + ' ס"מ';
+    weightValue.textContent = weight.value + ' ק"ג';
 
     let position = Math.min(Math.max((bmi / 40) * 100,0),100);
-    pointer.style.left = `calc(${position}% - 60px)`;
+    // pointer.style.left = `calc(${position}% - 60px)`;
 }
-age.addEventListener('input', calculateBMI);
+// age.addEventListener('input', calculateBMI);
 height.addEventListener('input', calculateBMI);
 weight.addEventListener('input', calculateBMI);
 

@@ -12,47 +12,47 @@
 <div class="container">
 
     <h1 dir="rtl">מחשבון BMI</h1>
-    <div class="input-group">
+    <!-- <div class="input-group" dir="rtl">
         <label>
             גיל
             <span class="range-value" id="ageValue">50</span>
         </label>
         <input type="range" id="age" min="30" max="99" value="50">
-    </div>
+    </div> -->
     <div class="input-group">
         <label>
-            גובה (ס''מ')
-            <span class="range-value" id="heightValue">170 ס''מ</span>
+            גובה (ס''מ)
+            <span class="range-value" id="heightValue" dir="rtl">170</span>
         </label>
-        <input type="range" id="height" min="120" max="220" value="170">
+        <input  type="range" id="height" min="120" max="220" value="170">
     </div>
 
     <div class="input-group">
         <label>
-            משקל (ק''ג')
-            <span class="range-value" id="weightValue">70 ק''ג</span>
+            משקל (ק''ג)
+            <span class="range-value" id="weightValue" dir="rtl">70</span>
         </label>
         <input type="range" id="weight" min="30" max="200" value="70">
     </div>
 
     <div class="result">
-        <div>שלך BMI</div>
+        <div id="mybmi">שלך BMI</div>
         <div class="bmi-value" id="bmi">24.2</div>
         <div class="category" id="category">משקל תקין</div>
     </div>
 
-    <div class="scale">
+    <!-- <div class="scale">
         <div class="scale-bar">
             <div class="pointer" id="pointer"></div>
         </div>
 
-        <!-- <div class="legend">
+        <div class="legend">
             <span id="underweight">תת משקל</span>
             <span id="normal">משקל תקין</span>
             <span id="overweight">עודף משקל</span>
             <span id="obese">השמנת יתר</span>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 
     <div class="info" dir="rtl">
         <strong>קטגוריות BMI</strong>
