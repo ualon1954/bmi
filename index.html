@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מחשבון BMI</title>
+<link rel="stylesheet" href="styles/bmi.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Professional BMI Calculator</h1>
+    <div class="input-group">
+        <label>
+            גיל
+            <span class="range-value" id="ageValue">50</span>
+        </label>
+        <input type="range" id="age" min="30" max="99" value="50">
+    </div>
+    <div class="input-group">
+        <label>
+            גובה (ס''מ')
+            <span class="range-value" id="heightValue">170 ס''מ</span>
+        </label>
+        <input type="range" id="height" min="120" max="220" value="170">
+    </div>
+
+    <div class="input-group">
+        <label>
+            משקל (ק''ג')
+            <span class="range-value" id="weightValue">70 ק''ג</span>
+        </label>
+        <input type="range" id="weight" min="30" max="200" value="70">
+    </div>
+
+    <div class="result">
+        <div>שלך BMI</div>
+        <div class="bmi-value" id="bmi">24.2</div>
+        <div class="category" id="category">משקל תקין</div>
+    </div>
+
+    <div class="scale">
+        <div class="scale-bar">
+            <div class="pointer" id="pointer"></div>
+        </div>
+
+        <div class="legend">
+            <span id="underweight">תת משקל</span>
+            <span id="normal">משקל תקין</span>
+            <span id="overweight">      עודף משקל</span>
+            <span id="obese">השמנת יתר</span>
+        </div>
+    </div>
+
+    <div class="info" dir="rtl">
+        <strong>קטגוריות BMI</strong>
+        <ul>
+            <li>Below 18.5 = תת משקל</li>
+            <li>18.5 - 24.9 = משקל תקין</li>
+            <li>25 - 29.9 = עודף משקל</li>
+            <li>30+ = השמנת יתר</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="scripts/bmi.js" ></script>
+</body>
+</html>
