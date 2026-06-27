@@ -134,6 +134,9 @@ input[type=range]{
 }
 
 @media(max-width:600px){
+    .container {
+        background: #111827;
+    }
     .bmi-value{
         font-size:45px;
     }
