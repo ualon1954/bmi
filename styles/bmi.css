@@ -147,3 +147,18 @@ input[type=range]{
         color: white;
     } 
 }
+@media(max-width:350px){
+    .container {
+        /* width: 95%; */
+        background: #0d3181;
+    }
+    .bmi-value{
+        font-size:45px;
+    }
+    label{
+        color: white;
+    } 
+    h1{
+        font-size: 20px;
+    }
+}
