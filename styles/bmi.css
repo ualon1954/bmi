@@ -76,7 +76,7 @@ input[type=range]{
     margin-top:30px;
 }
 
-/* .scale-bar{
+.scale-bar{
     height:25px;
     border-radius:30px;
     background:
@@ -92,7 +92,7 @@ input[type=range]{
         #ef4444 100%
     );
     position:relative;
-} */
+}
 
 .pointer{
     position:absolute;
