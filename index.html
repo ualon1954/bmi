@@ -11,10 +11,23 @@
  
 <div class="container">
     
-    <h1 dir="rtl">🏥 מחשבון  BMI<span class="help-icon">?</span></h1>
-    <div id="tooltip" class="tooltip" dir="rtl">
-        מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+    <h1 dir="rtl">🏥 מחשבון  BMI<span class="help-icon" onclick="openHelp()">?</span></h1>
+    <div class="modal" id="helpModal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeHelp()">&times;</span>
+        <br><br>
+         מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+
+        <!-- <button onclick="closeHelp()">Close</button> -->
+
     </div>
+
+</div>
+    <!-- <div id="tooltip" class="tooltip" dir="rtl">
+        מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+    </div> -->
     
     <!-- <div class="input-group" dir="rtl">
         <label>
