@@ -55,3 +55,15 @@ height.addEventListener('input', calculateBMI);
 weight.addEventListener('input', calculateBMI);
 
 calculateBMI();
+const icon = document.querySelector(".help-icon");
+const tip = document.getElementById("tooltip");
+
+icon.addEventListener("mouseover", e=>{
+    tip.style.display="block";
+    tip.style.left=e.pageX+"px";
+    tip.style.top=(e.pageY+15)+"px";
+});
+
+icon.addEventListener("mouseout", ()=>{
+    tip.style.display="none";
+});

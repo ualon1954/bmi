@@ -30,6 +30,30 @@ h1{
     margin-bottom:25px;
     color:pink;
 }
+.help-icon{
+    margin-right: 30px;
+    margin-top: 10px;
+    display:inline-block;
+    width:25px;
+    height:25px;
+    /* padding-top: 5px; */
+    border-radius:50%;
+    background:#0078d7;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+    font-size:20px;
+}
+.tooltip{
+    display:none;
+    position:absolute;
+    background:#333;
+    color:white;
+    padding:10px;
+    border-radius:6px;
+    max-width:250px;
+    text-align: right;
+}
 #mybmi{
     color: #3b82f6;
     font-weight: 550;
