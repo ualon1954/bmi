@@ -27,7 +27,7 @@ function calculateBMI(){
         color = '#3b82f6';
     }
     else if(bmi < 25){
-        category = 'משקל נורמלי';
+        category = 'תקין משקל';
         color = '#22c55e';
     }
     else if(bmi < 30){
