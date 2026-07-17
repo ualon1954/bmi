@@ -86,7 +86,7 @@ h1{
     padding:15px;
     padding-top: 5px;
     border-radius:8px;
-    /* position:relative; */
+    position:relative;
     text-align: right;
     animation:fadeIn .3s;
 }
