@@ -254,8 +254,11 @@ input[type=range]{
         background: #111827;
         margin-top: 5px;
     }
+    .category{
+        font-size:16px;
+    }
     .bmi-value{
-        font-size:45px;
+        font-size:30px;
     }
     label{
         color: white;
@@ -277,8 +280,11 @@ input[type=range]{
         /* width: 95%; */
         background: #111827;
     }
+    .category{
+        font-size:14px;
+    }
     .bmi-value{
-        font-size:45px;
+        font-size:26px;
     }
     label{
         color: white;
