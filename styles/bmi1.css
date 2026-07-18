@@ -119,8 +119,10 @@ h1{
     margin-bottom:20px;
 }
 .gender{
+    margin-bottom: 15px;
     direction: rtl;
     display:flex;
+    justify-content: center;
     gap:20px;
 }
 
