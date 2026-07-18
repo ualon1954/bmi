@@ -253,6 +253,9 @@ input[type=range]{
     label{
         color: white;
     } 
+    h1{
+        font-size: 20px;
+    }
 }
 @media(max-width:331px){
     .container {
@@ -266,6 +269,6 @@ input[type=range]{
         color: white;
     } 
     h1{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
