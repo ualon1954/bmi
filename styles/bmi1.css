@@ -229,7 +229,7 @@ input[type=range]{
     color:#38bdf8;
 }
 #bmr,#ideal{
-    color: #f8fafc;
+    color: black;
 }
 .info{
     text-align: right;
@@ -245,7 +245,7 @@ input[type=range]{
 
 @media(max-width:600px){
     body{
-        margin-top: -50px;
+        margin-top: -65px;
         padding: 0;
 
     }
@@ -263,10 +263,13 @@ input[type=range]{
     h1{
         font-size: 20px;
     }
+    #bmr,#ideal{
+    color: #f8fafc;
+    }
 }
 @media(max-width:331px){
     body{
-        margin-top: -50px;
+        margin-top: -65px;
         padding: 0;
 
     }
@@ -286,4 +289,7 @@ input[type=range]{
     h3{
         font-size: 14px;
     }
+    #bmr,#ideal{
+    color: #f8fafc;
+    }   
 }
