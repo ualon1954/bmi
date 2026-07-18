@@ -266,6 +266,9 @@ input[type=range]{
     h1{
         font-size: 20px;
     }
+    h3{
+        font-size: 14px;
+    }
     #bmr,#ideal{
     color: #f8fafc;
     }
