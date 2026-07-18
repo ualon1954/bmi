@@ -4,38 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>מחשבון BMI</title>
-<link rel="stylesheet" href="styles/bmi.css">
+<link rel="stylesheet" href="styles/bmi1.css">
 
 </head>
 <body>
  
 <div class="container">
     
-    <h1 dir="rtl">🏥 מחשבון  BMI<span class="help-icon" onclick="openHelp()">?</span></h1>
+    <h1 dir="rtl">🏥 מחשבון  BMI ו-BMR<span class="help-icon" onclick="openHelp()">?</span></h1>
     <div class="modal" id="helpModal">
 
-    <div class="modal-content">
+        <div class="modal-content">
 
-        <span class="close" onclick="closeHelp()">&times;</span>
-        <br><br>
-         מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+            <span class="close" onclick="closeHelp()">&times;</span>
+            <br><br>
+            BMI - מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+            <br><br>
+             מדד BMR בודק את קצב חילוף החומרים הבסיסי – Basal Metabolic Rate. מה הכוונה? כמה אנרגיה הגוף שלנו צורך במנוחה לצורך קיום פעילות חיונית כמו נשימה, פעילות עצבית, פעילות מערכת הלב ועוד. המדד הינו כללי ואינו לוקח בחשבון גיל, הרכב גוף, מצבים בריאותיים שונים, הסטורית המשקל ועוד. לקבלת מידע מדויק של מדד BMR ניתן לפנות למכונים המבצעים בדיקות במכשור מקצועי.
 
-        <!-- <button onclick="closeHelp()">Close</button> -->
+            <!-- <button onclick="closeHelp()">Close</button> -->
 
+        </div>
     </div>
-
-</div>
+    
     <!-- <div id="tooltip" class="tooltip" dir="rtl">
         מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
     </div> -->
-    
-    <!-- <div class="input-group" dir="rtl">
+<div class="input-group">
+    <!-- <label>Gender</label> -->
+
+    <div class="gender" id="gender">
+    <label>
+    <input type="radio" name="gender" value="גבר" checked onchange="onGenderChange(event)">
+    גבר
+    </label>
+
+    <label>
+    <input type="radio" name="gender" value="אישה"  onchange="onGenderChange(event)">
+    אישה
+    </label>
+</div>
+    <div class="input-group">
+        
         <label>
             גיל
-            <span class="range-value" id="ageValue">50</span>
+            <span class="range-value" id="ageValue" dir="rtl">50</span>
         </label>
         <input type="range" id="age" min="30" max="99" value="50">
-    </div> -->
+    </div>
     <div class="input-group">
         <label>
             גובה שלך
@@ -56,6 +72,15 @@
         <div id="mybmi">שלך BMI</div>
         <div class="bmi-value" id="bmi">24.2</div>
         <div class="category" id="category">משקל תקין</div>
+        <div class="stats">
+            <div class="box">
+            <h3>BMR</h3>
+            <div id="bmr"></div>
+            </div>
+            <div class="box">
+            <h3>משקל אידיאלי</h3>
+            <div id="ideal"></div>
+        </div>
     </div>
 
     <!-- <div class="scale">
@@ -79,10 +104,19 @@
             <li id="overweight">25 - 29.9 = עודף משקל</li>
             <li id="obese">30+ = השמנת יתר</li>
         </ul>
+        <!-- <div class="box">
+          <strong>BMR</strong>
+          <div id="bmr"></div>
+        </div>
+
+        <div class="box">
+           <strong>משקל מומלץ</strong>
+           <div id="ideal"></div>
+       </div> -->
     </div>
 
 </div>
 
-<script src="scripts/bmi.js" ></script>
+<script src="scripts/bmi1.js" ></script>
 </body>
 </html>
