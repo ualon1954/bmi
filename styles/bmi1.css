@@ -6,11 +6,12 @@
 }
 /* notes */
 body{
+    /* margin-top: -50px; */
     background:linear-gradient(135deg,#0f172a,#1e293b);
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:self-start;
+    /* align-items:self-start */
     padding:20px;
 }
 
@@ -25,7 +26,7 @@ body{
 }
 
 h1{
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
     text-align:center;
     margin-bottom:25px;
     color:pink;
@@ -243,9 +244,15 @@ input[type=range]{
 }
 
 @media(max-width:600px){
+    body{
+        margin-top: -50px;
+        padding: 0;
+
+    }
     .container {
         /* width: 95%; */
         background: #111827;
+        margin-top: 5px;
     }
     .bmi-value{
         font-size:45px;
@@ -258,9 +265,14 @@ input[type=range]{
     }
 }
 @media(max-width:331px){
+    body{
+        margin-top: -50px;
+        padding: 0;
+
+    }
     .container {
         /* width: 95%; */
-        background: #111827;
+        background: #60bb0b;
     }
     .bmi-value{
         font-size:45px;
@@ -270,5 +282,8 @@ input[type=range]{
     } 
     h1{
         font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
     }
 }
