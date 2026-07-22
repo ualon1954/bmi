@@ -3,6 +3,8 @@
   --base-variant: #e8e9ed;
   --text-color: #111528;
   --label-color: black;
+  --modal-background:#f8fafc;
+  --modal-color: rgba(0,0,0,.6);
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
@@ -12,6 +14,8 @@
   --base-variant: #101425;
   --text-color: #ffffff;
   --label-color: white;
+  --modal-background:rgba(0,0,0,.6);
+  --modal-color: white;
   --secondary-text: #a4a5b8;
   /* --primary-color: #3a435d; */
   --primary-color: yellow;
@@ -52,7 +56,7 @@ header{
 h1{
     /* margin-bottom: 130px; */
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:20px;
     color:pink;
 }
 
@@ -103,8 +107,8 @@ h1{
 .modal-content{
     /* margin-top: 10px; */
     direction: rtl;
-    background:rgba(0,0,0,.6);
-    color: white;
+    background:var(--modal-background);
+    color: var(--modal-color);
     width:100%;
     max-width:250px;
     margin:50px auto;
@@ -302,7 +306,7 @@ input[type=range]{
 
 @media(max-width:600px){
     body{
-        /* margin-top: -65px; */
+        margin-top: -25px;
         padding: 0;
 
     }
@@ -326,13 +330,13 @@ input[type=range]{
     h3{
         font-size: 16px;
     }
-    #bmr,#ideal{
+    /* #bmr,#ideal{
     color: #f8fafc;
-    }
+    } */
 }
 @media(max-width:331px){
     body{
-        /* margin-top: -65px; */
+        margin-top: -60px;
         padding: 0;
 
     }
@@ -355,7 +359,7 @@ input[type=range]{
     h3{
         font-size: 14px;
     }
-    #bmr,#ideal{
+    /* #bmr,#ideal{
     color: #f8fafc;
-    }   
+    }    */
 }
